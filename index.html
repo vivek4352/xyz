@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Event Registration - RGPV</title>
+</head>
+<body>
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1>Finding the Balance: Learn vs Earn</h1>
+    <p>Join us for an inspiring session on striking the right balance in your career journey.</p>
+  </section>
+
+  <!-- Registration Form -->
+  <section class="form-container">
+    <h2>Register Now</h2>
+    <form id="registrationForm">
+      <label>Name: <input type="text" id="name" required /></label>
+      <label>Email: <input type="email" id="email" required /></label>
+      <label>Phone: <input type="tel" id="phone" required pattern="[0-9]{10}" /></label>
+      <label>College: <input type="text" id="college" required /></label>
+      <label>Year: 
+        <select id="year" required>
+          <option value="">Select Year</option>
+          <option value="1">1st Year</option>
+          <option value="2">2nd Year</option>
+          <option value="3">3rd Year</option>
+          <option value="4">4th Year</option>
+        </select>
+      </label>
+
+      <!-- Check-in & Check-out Option -->
+      <label>
+        Check-in/Check-out:
+        <select id="attendance" required>
+          <option value="">Select Option</option>
+          <option value="check-in">Check-in</option>
+          <option value="check-out">Check-out</option>
+        </select>
+      </label>
+
+      <button type="submit">Submit</button>
+    </form>
+    <p id="responseMessage"></p>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
